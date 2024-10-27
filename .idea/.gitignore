@@ -5,4 +5,8 @@
 .terraform/providers/registry.terraform.io/hashicorp/aws/5.72.1/windows_386/terraform-provider-aws_v5.72.1_x5.exe
 
 # 전체 .terraform 디렉토리 무시
-.terraform/
+.terraform/*
+
+.terraform/*.*
+
+.terraform/**
