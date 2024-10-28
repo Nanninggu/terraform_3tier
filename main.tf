@@ -1,11 +1,11 @@
-terraform {
-  # Terraform 설정 블록 시작
-  backend "local" {
-    # 로컬 백엔드를 사용하여 상태 파일을 저장
-    path = "C:\\Users\\김승현\\Documents\\oCam\\인프런 강의\\아키텍처와 함께하는 Terraform 기초편!\\code-module1\\terraform.tfstate"
-    # 상태 파일을 저장할 경로
-  }
-}
+# terraform {
+#   # Terraform 설정 블록 시작
+#   backend "local" {
+#     # 로컬 백엔드를 사용하여 상태 파일을 저장
+#     path = "C:\\Users\\김승현\\Documents\\oCam\\인프런 강의\\아키텍처와 함께하는 Terraform 기초편!\\code-module1\\terraform.tfstate"
+#     # 상태 파일을 저장할 경로
+#   }
+# }
 
 # aws provider 생성
 provider "aws" {
