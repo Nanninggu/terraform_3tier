@@ -55,3 +55,15 @@ resource "aws_route_table_association" "public_2" {
   subnet_id = aws_subnet.public2.id  # 퍼블릭 서브넷 2의 ID 설정
   route_table_id = var.route_table_id  # 라우트 테이블 ID 설정
 }
+
+# # private subnet 1과 라우트 테이블 연결 (추가 영상)
+# resource "aws_route_table_association" "private_1" {
+#   subnet_id = aws_subnet.private1.id  # 프라이빹 서브넷 1의 ID 설정
+#   route_table_id = var.route_table_id1  # 라우트 테이블 ID 설정
+# }
+#
+# # private subnet 2와 라우트 테이블 연결 (추가 영상)
+# resource "aws_route_table_association" "private_2" {
+#   subnet_id = aws_subnet.private2.id  # 프라이빹 서브넷 2의 ID 설정
+#   route_table_id = var.route_table_id1  # 라우트 테이블 ID 설정
+# }

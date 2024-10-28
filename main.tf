@@ -1,12 +1,3 @@
-# terraform {
-#   # Terraform 설정 블록 시작
-#   backend "local" {
-#     # 로컬 백엔드를 사용하여 상태 파일을 저장
-#     path = "C:\\Users\\김승현\\Documents\\oCam\\인프런 강의\\아키텍처와 함께하는 Terraform 기초편!\\code-module1\\terraform.tfstate"
-#     # 상태 파일을 저장할 경로
-#   }
-# }
-
 # aws provider 생성
 provider "aws" {
   region = "ap-northeast-2" # AWS 리전 설정
@@ -22,6 +13,7 @@ module "subnet" {
   source = "./modules/subnet" # 서브넷 모듈 소스 경로
   vpc_id = module.vpc.vpc_id # VPC 모듈에서 VPC ID 가져오기
   route_table_id = module.vpc.route_table_id # VPC 모듈에서 라우트 테이블 ID 가져오기
+  # route_table_id1 = module.vpc.route_table_id1 # VPC 모듈에서 라우트 테이블 ID 가져오기 (추가 영상)
 }
 
 module "security-group" {

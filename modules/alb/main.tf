@@ -21,6 +21,7 @@ resource "aws_lb_target_group" "this" {
     healthy_threshold   = 2
     unhealthy_threshold = 2
   }
+  # 고정 세션 활성화!! (추가 영상)
   # stickiness {
   #   type            = "lb_cookie"
   #   cookie_duration = 86400  # 1 day in seconds
