@@ -1,1 +1,1 @@
-variable "vpc_id" {}  # VPC ID 변수
+variable "vpc_id" {} # VPC ID 변수
